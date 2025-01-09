@@ -1,0 +1,76 @@
+#calendar {
+  width: 1000px;
+	height: 1000px;
+  margin: 0 auto;
+}
+body{
+  
+  background-color:rgb(196, 201, 224) ;
+}
+#title{
+  color: #9c27b0;
+  font-weight: 800;
+  border-bottom: 3px solid coral;
+  background: #ccc;
+  padding: 1px 1px;
+}
+
+/****************/
+input {
+  display: none;
+ 
+}
+.fc-unthemed td.fc-today {
+  background: #FA9E37;
+}
+.fc-state-active, .fc-state-down {
+  background-color: #FA9E37;
+  background-image: none;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, .15), 0 1px 2px rgba(0, 0, 0, .05);
+}
+.fc-content{
+  color: #fff !important;
+}
+
+
+
+#btnCerrar{
+  color:crimson;
+  padding: 1px;
+  background: #8888;
+  border-radius: 25px;
+  font-size: 17px;
+  font-weight: 600;
+}
+#btnCerrar:hover{
+  cursor: pointer;
+  background-color: #333;
+}
+
+
+
+.circu{
+  padding: 25px;
+  background: #FA9E37;
+  border-radius: 50px;
+}
+
+#grupoRadio label:hover{
+  cursor: pointer;
+}
+
+#grupoRadio input[type="radio"]:checked + label {
+  border: 3px solid #ccc !important;  
+}
+
+
+.activado input[type=radio]:checked + label {
+  border: 3px solid #555 !important;  
+}
+@media screen and (max-width: 1500px) {
+  #calendar {
+    width: 900px;
+    height: 900px;
+    margin: 0 auto;
+  }
+}

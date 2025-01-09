@@ -1,0 +1,164 @@
+
+/* colores
+.color1 {color: #060607;}
+.color2 {color: #212f39;}
+.color3 {color: #485f74;}
+.color4 {color: #739ebb;}
+.color5 {color: #9cdddf;} 
+ otros verde
+ --salem-50: #effaf4;
+--salem-100: #d8f3e3;
+--salem-200: #b3e7cb;
+--salem-300: #82d3ad;
+--salem-400: #4eb98b;
+--salem-500: #2b9e70;
+--salem-600: #1d815b;
+--salem-700: #17654a;
+--salem-800: #14513c;
+--salem-900: #124233;
+--salem-950: #09251c;
+
+otros azul
+--deep-cerulean-50: #f1f9fe;
+--deep-cerulean-100: #e2f3fc;
+--deep-cerulean-200: #bee7f9;
+--deep-cerulean-300: #85d4f4;
+--deep-cerulean-400: #45beeb;
+--deep-cerulean-500: #1ca7db;
+--deep-cerulean-600: #0e7eaf;
+--deep-cerulean-700: #0d6b97;
+--deep-cerulean-800: #0f5b7d;
+--deep-cerulean-900: #124b68;
+--deep-cerulean-950: #0c3045;
+
+
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+header {
+   
+   
+    width: 100%;
+    background-color: #17654a;
+   
+}
+
+.navegador {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row;
+
+}
+.navegador a {
+
+  margin-top: 3vh;
+  margin-right: 2vh;
+}
+.navegador i {
+ 
+   font-size: 2.5vh;
+   color:#000;
+  
+ 
+ }
+
+.icono{
+  width:10vh;
+
+}
+/* section */
+.principal {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  
+ 
+}
+
+#menu {
+  background-color: #17654a;
+  padding: 2%;
+
+}
+
+#menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+#menu ul li {
+  margin-bottom: 10px;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+#menu ul li a:hover {
+  color: #000;
+}
+ #menu i{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+font-size: 2.5vh;
+margin-bottom: 7vh;
+ }
+
+
+#contenido {
+  flex: 1;
+  padding: 10px;
+  justify-content: center;
+ 
+}
+
+#resumen {
+  background-color: #fff;
+  padding: 10px;
+  margin-left:5% ;
+  display: flex;
+ flex-direction: column;
+  width: 100%;
+}
+
+/* Estilos personalizados para el section con id "resumen" */
+
+
+
+
+#tareas{
+  margin:auto;
+}
+.productos{
+  margin: 0 auto; /* Centra el contenedor horizontalmente en la página */
+  max-width: 90%; /* Ajusta el ancho máximo del contenedor según sea necesario */
+ 
+  padding: 20px; /* Añade espacio interior */
+}
+
+  
+
+
+.productos img {
+  display: block; /* Asegura que la imagen se comporte como un bloque */
+  margin: 0 auto; /* Centra horizontalmente la imagen */
+  max-width: 200px; /* Define el ancho máximo de la imagen */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+}

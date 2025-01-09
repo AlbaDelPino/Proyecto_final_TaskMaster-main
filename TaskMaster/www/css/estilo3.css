@@ -1,0 +1,571 @@
+*{
+
+    font-family:'Courier New', Courier, monospace; 
+      
+  }
+
+  
+  .body{
+  
+    background-color:#F2F2F2 ;
+  }
+  .titulo{
+    background-color:#1a2e45 ;
+    padding: 1% 1% 0% 1%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
+  .titulo div {
+  width: 100%;
+  display: flex;
+  margin: 1%;
+  }
+  .titulo img {
+   width: 8vh;
+  height: 8vh;
+  border-radius:400px ;
+  }
+  .titulo div  h1{
+  display: flex;
+  color: #ffffff;
+  margin-left: 2%;
+  align-items: center;
+  font-size:2em;
+  }
+  .titulo a {
+    display: flex;
+    color: #ffffff;
+    margin-right: 2%;
+    align-items: center;
+    font-size:1em;
+  }
+  .titulo p{
+    color:#fff;
+    font-size:1em;
+    margin-top:10%;
+    margin-right: 50%;
+  }
+  .principal{
+  width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 90vh; 
+  }
+
+  .enlaces{
+    background-color:#1a2e45 ;
+ width: 10%;
+    
+  
+     /* margin: 0.5%; */
+  }
+  .enlaces ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .enlaces li{
+   padding: 1%;
+   padding: 10% 0% 0% 10%;
+  
+  }
+  .enlaces a{
+    color: #fff;
+    text-decoration: none;
+    font-size:1.8vh;
+  }
+  .enlaces i{
+    padding-right: 10%;
+    color: #fff;
+    text-decoration: none;
+  }
+  .enlaces i:hover{
+    color:#FA9E37;
+    text-decoration: none;
+  }
+  .enlaces a:hover{
+    color:#FA9E37;
+    text-decoration: none;
+  }
+  .enlaces li:hover{
+    color:#FA9E37;
+  
+  }
+
+  /* calendario */
+.principal-calendario{
+     width: 88%;
+     margin-right: 1%;
+     color:#4A4A4A;
+    margin-left: 1%;
+     height: 99vh;   
+    
+   }
+
+
+/* tareas */
+.principal-tarea{
+    width: 90%;
+    padding: 2%;
+    overflow-y: scroll;
+  }
+
+  .principal-tarea td a{
+   text-decoration: none;
+   color: black;
+  }
+  /*listado y tareas*/
+  .tabla  {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  .tabla  caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  
+ .tabla  tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+  }
+  
+  .tabla  th,
+  .tabla  td {
+    padding: .625em;
+    text-align: center;
+  }
+  
+ .tabla  th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  .botones{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+  }
+  .botones button:first-child{
+   background-color: #53af53;
+    width: 50%;
+    
+  }
+  .botones button{
+    background-color: #ccc;
+    width: 50%;
+    
+  }
+  
+    /*listado*/
+    .principal-listado{
+      width: 90%;
+      padding: 2%;
+      overflow-y: scroll;
+    }
+    .principal-listado td a{
+      text-decoration: none;
+      color: black;
+     }
+  
+/* kanban */
+.principal-kanban{
+  width: 90%;
+  padding: 2%;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-content: flex-start;
+height:84vh ;
+}
+.principal-kanban article:first-child{
+width: 100%;
+margin: 1%;
+
+ 
+
+}
+.no_iniciado, .en_curso , .completado, .detenido{
+  background-color:rgb(196, 201, 224) ;
+  width: 23%;
+margin: 1%;
+ 
+min-height: 70vh; 
+  height: 95%;
+  overflow-y: scroll;
+ 
+
+}
+.no_iniciado h2{
+  background-color: rgb(52, 174, 255);
+   text-align: center;
+   padding: 2%;
+}
+.en_curso h2{
+  background-color: rgb(226, 145, 70);
+   text-align: center;
+   padding: 2%;
+}
+.completado h2{
+  background-color: rgb(127, 226, 70);
+   text-align: center;
+   padding: 2%;
+}
+.detenido h2{
+  background-color: rgb(226, 70, 78);
+   text-align: center;
+   padding: 2%;
+}
+.no_iniciado p, .en_curso p , .completado p , .detenido p{
+  padding : 2%;
+  margin:2%;
+}
+#div1, #div2,#div23,#div4 {
+  float: left;
+  width: 100px;
+  height: 35px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}   
+
+/* chat */
+.principal-chat{
+  width: 90%;
+  height:84vh ;
+}
+
+.perfil{
+  width: 100%;
+  background-color: #f2f2f2;
+/*    position: fixed;*/
+  
+  height:7% ;
+}
+.perfil h3{
+  padding:1%;
+  font-size:2em;
+  color: #4A4A4A;
+}
+#chat{
+  background-color:#fff ;
+  height:90.4% ;
+  width: 100%;
+  overflow-y: scroll;
+
+}
+
+.mensaje {
+  max-width: 48%;
+
+  border-radius: 5px;
+  color: #4A4A4A;
+  margin-left: 2%;
+
+ 
+}
+
+.mensaje img ,.perfil img{
+  width: 10%;
+  height: 10%;
+  padding: 2%;
+  border-radius: 5em; 
+ 
+}
+.mensaje h6{
+ margin-left: 5%;
+ margin-right: 5%;
+ color: #4a4747;
+}
+
+.mensaje p{
+  padding:2%;
+  display: inline-block;
+  background-color: #f2f2f2;
+  font-size: 0.9em;
+  overflow-wrap: break-word;
+  word-break: break-word; 
+  border-radius: 30px;
+  width: 70%;
+}
+.me {
+  position: relative; 
+  left:  49%; 
+  top: 10px;
+  color: #FFFFFF;
+ text-align: right;
+
+}
+.me p {
+ 
+  background-color:#FA9E37 ;
+}
+.formchat{
+  background-color:#1A2E45;
+  width: 100%;
+}
+
+.formchat textarea {
+  
+margin-left: 1%;
+ width: 95%;
+margin-top:1%;
+
+  resize: none;
+border: none;
+  
+  background-color: #FFFFFF;   
+}
+
+.principal-chat button{
+margin-top: -1%;
+}
+.principal-chat i{
+  font-size: 1.5em;
+  color:#FA9E37;
+
+ 
+}
+
+
+/* persona chat */
+.principal-chatper{
+  width: 90%;
+  padding: 2%;
+  overflow-y: scroll;
+}
+.principal-chatper table{
+  width: 100%;
+ 
+}
+  
+     /* perfil */
+  .principal-perfil{
+    width: 90%;
+    border-radius: 10px;
+margin-left: 2%;
+display: flex;
+flex-direction: row;
+ 
+
+  }
+  .imagen {
+    display: flex;
+
+    flex-direction: column;
+    width: 30%;
+  }
+  .imagen button{
+    margin-top: 3%;
+    width:50% ;
+  }
+  .imagen img{
+    margin-top: 3%;
+    width:25vh ;
+    height:25vh ;
+    border-radius: 200px;
+  }
+  .datos {
+    margin-top:2%;
+  }
+  @media screen and (max-width: 1500px) {
+    .principal{
+      width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 88vh; 
+      }
+    
+    .enlaces{
+        background-color:#1a2e45 ;
+     width: 100%;
+        
+      
+         /* margin: 0.5%; */
+      }
+      .enlaces ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .enlaces li{
+        padding: 1%;
+       }
+       .enlaces a{
+        text-align: center;
+        display: block;
+        margin:0;
+         color: #fff;
+         text-decoration: none;
+         font-size:1.8vh;
+       }
+       .enlaces i{
+          text-align: center;
+          display: block;
+          margin:0;
+         color: #fff;
+         text-decoration: none;
+       }
+       /*calendario*/
+    .principal-calendario{
+      width: 100%;
+    }
+    /* tarea */
+    .principal-tarea{      
+      width: 100%;
+      padding: 2%;
+      overflow-y: scroll;
+    }
+    .tabla {
+      border: 0;
+    }
+    .tabla thead {
+        /* Elimina el ajuste de altura y la ocultación */
+        height: auto;
+        clip: auto;
+    }
+    .tabla caption {
+      font-size: 1.3em;
+    }
+    
+    .tabla thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    .tabla tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    .tabla td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    .tabla td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    .tabla td:last-child {
+      border-bottom: 0;
+    }
+    /*kanban*/
+    .principal-kanban{
+      width: 100%;
+    }
+  /*chat_per*/
+  .principal-chatper{
+    width: 100%;
+  }
+  .principal-chat{
+    width: 100%;
+  }
+  #chat{
+    background-color:#fff ;
+    height:89.5% ;
+    width: 100%;
+    overflow-y: scroll;
+  
+  }
+  .mensaje p{
+    padding:5%;
+  
+  }
+  .formchat textarea {
+    
+  margin-left: 1%;
+   width: 90%;
+  margin-top:1%;
+
+  }
+  .formchat textarea:focus {
+    
+
+      resize: none;
+    border: none;
+   
+    }
+    
+  
+  .principal-chat button{
+  margin-top: -2%;
+  }
+  .principal-chat i{
+    font-size: 1.5em;
+    color:#FA9E37;
+  
+   
+  } 
+  /* listado */
+  .principal-listado {
+    width: 100%;
+  }
+  /*perfil*/
+  .imagen{
+    width: 50%;
+  }
+  .datos {
+    margin-top:5%;
+  }
+  body {
+    font-size: 20px; /* Aumenta el tamaño de la fuente */
+  }
+
+  .modal-dialog {
+    max-width: 800px; /* Aumenta el ancho del modal */
+  }
+
+  .form-control {
+    font-size: 1.2em; /* Aumenta el tamaño de la fuente en los formularios */
+  }
+
+  .modal-title {
+    font-size: 2em; /* Aumenta el tamaño de la fuente del título del modal */
+  }
+}
+@media (max-width: 767px) {
+  .tabla td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 10em;
+    text-align: right;
+  }
+  .modal-dialog {
+    max-width: 100%; /* Asegúrate de que el modal ocupe el ancho completo de la pantalla */
+  }
+
+  .form-control {
+    font-size: 1em; /* Ajusta el tamaño de la fuente para dispositivos móviles */
+  }
+
+  .modal-title {
+    font-size: 1.5em; /* Ajusta el tamaño de la fuente del título del modal para dispositivos móviles */
+  }
+}
